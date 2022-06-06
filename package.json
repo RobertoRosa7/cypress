@@ -1,20 +1,18 @@
 {
-  "name": "cypress",
+  "name": "primeiro-projeto",
   "version": "1.0.0",
-  "description": "",
+  "description": "Primeiro projeto com Cypress",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress open",
+    "test:cli": "npx cypress run",
+    "test:report": "npx cypress run --reporter mochawesome",
+    "test:dashboard":"npx cypress run --record --key 11e489b8-acbe-4c72-b08b-48c64062df01"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RobertoRosa7/cypress.git"
-  },
-  "keywords": [],
-  "author": "",
+  "author": "Roberto Rosa",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/RobertoRosa7/cypress/issues"
-  },
-  "homepage": "https://github.com/RobertoRosa7/cypress#readme"
+  "devDependencies": {
+    "cypress": "^9.1.1",
+    "mochawesome": "^7.1.3"
+  }
 }
